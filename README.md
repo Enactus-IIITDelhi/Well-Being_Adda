@@ -1,4 +1,4 @@
-# Enactus-IIITD-Website
+# :sparkles: Enactus-IIITD-Website 
 
 ### :rocket: Getting Started
 * `git clone https://github.com/aastha985/Enactus-IIITD-Website.git`

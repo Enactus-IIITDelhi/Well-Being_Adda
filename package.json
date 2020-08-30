@@ -4,8 +4,8 @@
   "description": "Website for The Wellbeing Adda, an initiative of Enactus IIITD",
   "main": "app.js",
   "scripts": {
-    "start" : "node app.js",
-    "dev" : "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",

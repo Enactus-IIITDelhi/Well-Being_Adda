@@ -138,7 +138,7 @@ LOGIN_REDIRECT_URL = "/home/"
 LOGOUT_REDIRECT_URL = "/home/"
 if not DEBUG:
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-    EMAIL_HOST_USER = 'sushant19450@iiitd.ac.in'
+    EMAIL_HOST_USER = 'enactus@iiitd.ac.in'
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_PORT = 587
     EMAIL_USE_TLS = True

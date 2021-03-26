@@ -31,7 +31,13 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect(reverse("index"))
+            return redirect(reverse("chat_feature:home"))
+        else:
+            print(form.errors.as_json())
+            return render(
+                request, "chat_feature/register.html",
+                {"form": forms.CustomUserCreationForm}
+            )
 
 
 def get_last_10_messages():

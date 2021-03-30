@@ -1,0 +1,45 @@
+body {
+    overflow-y: hidden;
+}
+
+.navSpacer {
+    min-height: 100px;
+}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.form-bhar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px 80px;
+    border-radius: 10px;
+    color: white;
+}
+
+.spacer {
+    min-height: 20px;
+}
+
+.roomInput {
+    max-width: 300px;
+}
+
+.button {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0px;
+    left: 0px;
+    z-index: -1;
+}

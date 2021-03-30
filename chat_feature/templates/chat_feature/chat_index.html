@@ -1,29 +1,32 @@
-<!DOCTYPE html>
-<html>
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'ChatRooms/css/chatroomIndex.css' %}">
+<div class="background">
+    <img src="{% static 'ChatRooms/images/index_bg.jpg' %}" alt="">
+</div>
+<div class="navSpacer"></div>
+<div class="wrapper">
+    <div class="form-bhar">
+        What chat room would you like to enter?<br>
+        <div class="spacer"></div>
+        <input id="room-name-input" type="text" size="100" class="roomInput"><br>
+        <div class="spacer"></div>
+        <input id="room-name-submit" type="button" value="Enter" class="btn btn-primary px-5 button">
+    </div>
+</div>
 
-<head>
-    <meta charset="utf-8" />
-    <title>Chat Rooms</title>
-</head>
+<script>
+    document.querySelector('#room-name-input').focus();
+    document.querySelector('#room-name-input').onkeyup = function (e) {
+        if (e.keyCode === 13) {  // enter, return
+            document.querySelector('#room-name-submit').click();
+        }
+    };
 
-<body>
-    What chat room would you like to enter?<br>
-    <input id="room-name-input" type="text" size="100"><br>
-    <input id="room-name-submit" type="button" value="Enter">
-
-    <script>
-        document.querySelector('#room-name-input').focus();
-        document.querySelector('#room-name-input').onkeyup = function (e) {
-            if (e.keyCode === 13) {  // enter, return
-                document.querySelector('#room-name-submit').click();
-            }
-        };
-
-        document.querySelector('#room-name-submit').onclick = function (e) {
-            var roomName = document.querySelector('#room-name-input').value;
-            window.location.pathname = '/chat/' + roomName + '/';
-        };
-    </script>
-</body>
-
-</html>
+    document.querySelector('#room-name-submit').onclick = function (e) {
+        var roomName = document.querySelector('#room-name-input').value;
+        window.location.pathname = '/chat/' + roomName + '/';
+    };
+</script>
+{% endblock %}

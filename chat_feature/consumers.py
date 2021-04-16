@@ -1,9 +1,9 @@
+from os import name
 from django.contrib.auth import get_user_model
 from asgiref.sync import async_to_sync
 from channels.generic.websocket import WebsocketConsumer
 import json
-from .models import Message, Contact
-from .views import get_last_10_messages, get_user_contact
+from .models import Message, Contact, Chat
 User = get_user_model()
 
 
@@ -11,9 +11,7 @@ class ChatConsumer(WebsocketConsumer):
 
 
     def fetch_messages(self, data):
-        print(data)
-        print("fetch")
-        messages = get_last_10_messages()
+        messages = Chat.get_last_10_messages()
         content = {
             'command': 'messages',
             'messages': self.messages_to_json(messages)
@@ -21,12 +19,13 @@ class ChatConsumer(WebsocketConsumer):
         self.send_message(content)
 
     def new_message(self, data):
-        print(data)
-        print("new")
-        user_contact = get_user_contact(data['from'])
+        user_contact = Contact.get_user_contact(data['from'])
         message = Message.objects.create(
             contact=user_contact,
             content=data['message'])
+        message.save()
+        chat = Chat.objects.get(name=data['chat'])
+        chat.messages.add(message)
         content = {
             'command': 'new_message',
             'message': self.message_to_json(message)

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
@@ -40,11 +40,6 @@ def register(request):
             )
 
 
-def get_last_10_messages():
-    messages = Message.objects.order_by('-timestamp').all()[:10]
-    return messages
 
 
-def get_user_contact(username):
-    user = get_object_or_404(User, username=username)
-    return get_object_or_404(Contact, user=user)
+

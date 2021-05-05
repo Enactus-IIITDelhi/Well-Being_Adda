@@ -5,7 +5,6 @@
 		}
 	],
     "settings": {
-        "python.pythonPath": "/mnt/d/files/Well-Being Adda/wba/bin/python"
     },
     "launch": {
         "version": "0.2.0",

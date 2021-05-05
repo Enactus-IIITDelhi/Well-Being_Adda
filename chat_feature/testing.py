@@ -1,6 +1,5 @@
-from os import name
-from .models import Chat
+from .models import Contact, Chat
+from django.contrib.auth.models import User
 
-chat = Chat.objects.get(name="test_chat")
-users = chat.participants.all()
-print(users)
+chat = Chat.objects.all().delete()
+# import chat_feature.testing

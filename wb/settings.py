@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'guardian',
     'channels'
 ]
 
@@ -80,6 +81,11 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',  # this is default
+    'guardian.backends.ObjectPermissionBackend',
+)
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -134,8 +140,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = "/home/"
 LOGOUT_REDIRECT_URL = "/home/"
+
 if not DEBUG:
     EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
     EMAIL_HOST_USER = 'enactus@iiitd.ac.in'
@@ -144,4 +152,6 @@ if not DEBUG:
     EMAIL_USE_TLS = True
     EMAIL_HOST_PASSWORD = "Password"
 else:
-    EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = 'localhost'
+    EMAIL_PORT = 1025

@@ -84,7 +84,6 @@ CHANNEL_LAYERS = {
 
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend',  # this is default
-    'guardian.backends.ObjectPermissionBackend',
 )
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases

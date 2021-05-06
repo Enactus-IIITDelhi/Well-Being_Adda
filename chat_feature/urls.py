@@ -12,4 +12,5 @@ urlpatterns = [
     path('account/register/', views.register, name='register'),
     path('account/profile', views.profile, name='profile'),
     path('about', views.about, name="about"),
+    path('chat_bot', views.chat_bot, name='chat_bot')
 ]

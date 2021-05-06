@@ -117,9 +117,17 @@ def profile(request):
             user.set_password(request.POST['new_password1'])
         user.save()
         login(request, user)
-        return render(request, 'chat_feature/profile.html')
+        contact = Contact.objects.get(user=user)
+        chats = contact.chat_set.all()
+        cont = {
+            "contact": contact,
+            'chats': chats
+        }
+        return render(request, 'chat_feature/profile.html', context=cont)
 
 
 def about(request):
     return render(request, 'chat_feature/about.html')
 
+def chat_bot(request):
+    return render(request,'chat_feature/chat_bot.html')

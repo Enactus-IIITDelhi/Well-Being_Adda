@@ -159,7 +159,7 @@
                                     </ul>
                                     <div class="tab-content pt-3">
                                         <div class="tab-pane active">
-                                            <form class="form" novalidate="" method="POST">
+                                            <form class="form" action="{% url 'chat_feature:profile' %}" method="POST">
                                                 {% csrf_token %}
                                                 <div class="row">
                                                     <div class="col">

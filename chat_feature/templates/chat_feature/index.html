@@ -9,7 +9,7 @@
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
 <!-- <div class="parallax1">
@@ -33,58 +33,61 @@
 <div class="spacer">
 </div>
 
-<div class="scrollIcon"><i class="fas fas fa-arrow-circle-down fa-2x d-none d-lg-block"></i></div>
+<!-- <div class="scrollIcon"><i class="fas fas fa-arrow-circle-down fa-2x d-none d-lg-block"></i></div> -->
 
-<div class="container slideshow">
-    <div class="slideItem">
-        <img src="{% static 'chat_feature/images/bg1.png' %}" width="100%">
-        <div class="d-flex row mx-0 align-items-center center">
-            <div class="col-12 col-md-6 text-center">
-                <div class="my-5 d-none d-md-inline">
-                    <h1 class="sub-heading">Enactus IIITD</h1>
-                    <h1 class="display-2 heading">Well-Being Adda</h1>
+<div class="slick_container">
+    <div class="container slideshow">
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/bg1.png' %}" width="100%">
+            <div class="d-flex row mx-0 align-items-center center">
+                <div class="col-12 col-md-6 text-center">
+                    <div class="my-5 d-none d-md-inline">
+                        <h1 class="sub-heading">Enactus IIITD</h1>
+                        <h1 class="display-2 heading">Well-Being Adda</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 content-align-left">
-                {% load static %}
-                <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}"
-                    class="img-responsive landingLogo" width="100%">
+                <div class="col-12 col-md-6 content-align-left">
+                    {% load static %}
+                    <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}"
+                        class="img-responsive landingLogo" width="100%">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="slideItem">
-        <img src="{% static 'chat_feature/images/bg2.png' %}" width="100%">
-        <div class="d-flex row mx-0 align-items-center center">
-            <div class="col-12 text-center">
-                <div class="my-5 d-none d-md-inline">
-                    <h1 class="sub-heading">Enactus IIITD</h1>
-                    <h1 class="display-2 heading">Well-Being Adda</h1>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/bg2.png' %}" width="100%">
+            <div class="d-flex row mx-0 align-items-center center">
+                <div class="col-12 text-center">
+                    <div class="my-5 d-none d-md-inline">
+                        <h1 class="sub-heading">Enactus IIITD</h1>
+                        <h1 class="display-2 heading">Well-Being Adda</h1>
+                    </div>
                 </div>
+                <!-- <div class="col-12 col-md-6 content-align-left">
+                    {% load static %}
+                    <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}"
+                        class="img-responsive landingLogo" width="100%">
+                </div> -->
             </div>
-            <!-- <div class="col-12 col-md-6 content-align-left">
-                {% load static %}
-                <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}"
-                    class="img-responsive landingLogo" width="100%">
-            </div> -->
         </div>
-    </div>
-    <div class="slideItem">
-        <img src="{% static 'chat_feature/images/bg3.png' %}" width="100%">
-        <div class="d-flex row mx-0 align-items-center center">
-            <div class="col-12 text-center">
-                <div class="my-5 d-none d-md-inline">
-                    <h1 class="sub-heading">Enactus IIITD</h1>
-                    <h1 class="display-2 heading">Well-Being Adda</h1>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/bg3.png' %}" width="100%">
+            <div class="d-flex row mx-0 align-items-center center">
+                <div class="col-12 text-center">
+                    <div class="my-5 d-none d-md-inline">
+                        <h1 class="sub-heading">Enactus IIITD</h1>
+                        <h1 class="display-2 heading">Well-Being Adda</h1>
+                    </div>
                 </div>
+                <!-- <div class="col-12 col-md-6 content-align-left">
+                    {% load static %}
+                    <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}"
+                        class="img-responsive landingLogo" width="100%">
+                </div> -->
             </div>
-            <!-- <div class="col-12 col-md-6 content-align-left">
-                {% load static %}
-                <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}"
-                    class="img-responsive landingLogo" width="100%">
-            </div> -->
         </div>
     </div>
 </div>
+
 
 
 <!-- <div id="carouselLanding" class="carousel slide" data-ride="carousel">
@@ -117,21 +120,73 @@
         </a>
     </div> -->
 
-<div class="container">
-    <div class="d-flex row mx-0 align-items-center">
-        <div class="col-12 col-md-6 text-justify">
-            <h1 class="display5 heading-content text-center">Heading 1</h1>
-            <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laboriosam
-                doloremque ratione ex quo tempora unde consequatur quisquam molestias nemo impedit obcaecati aut,
-                reprehenderit incidunt delectus temporibus enim vel soluta. Eveniet ipsam vero, culpa beatae cum
-                illum assumenda delectus, eos modi maiores amet, adipisci nihil pariatur hic quia quaerat. Aperiam.
+<div class="container-fluid mx-0 px-0">
+
+    <div class="d-flex row mx-0 align-items-center section light mt-5 mx-5 p-5">
+        <div class="col-12 col-lg-6">
+            <!-- <h1 class="display5 heading-content text-center">About Well-Being Adda</h1> -->
+            <p class="content"> <span class="bold">Well-being Adda aims to promote emotional health & holistic
+                    well-being.</span>
+                <br>Our initiatives include:
             </p>
+            <ul class="list">
+                <li>Targeting the stigma around <span class="highlight">mental health</span></li>
+                <li>Raising awareness about <span class="highlight">well-being</span></li>
+                <li>Creating solutions to make <span class="highlight">emotional support</span> and <span
+                        class="highlight">therapy</span> more <span class="highlight">accessible and affordable</span>
+                </li>
+                <li>Building an engaging and supportive <span class="highlight">community</span></li>
+            </ul>
         </div>
-        <div class="col-6 d-none d-md-block" id="textbg1">
-            <img src="{% static 'chat_feature/images/textbg1.png' %}" alt="textbg1" class="img-responsive" width="100%">
+        <div class="col-12 col-lg-6 d-flex justify-content-center" id="textbg1">
+            <!-- <img src="{% static 'chat_feature/images/textbg1.png' %}" alt="textbg1" class="img-responsive" width="100%"> -->
+            <iframe src="https://drive.google.com/file/d/1A3SRetN6lD-uYjdWzDpRVBKrdYOU37hn/preview" width="640"
+                height="360" allowfullscreen class="my-4"></iframe>
         </div>
     </div>
-    <div class="d-flex row mx-0 align-items-center">
+
+    <div class="d-flex row mx-0 align-items-center section dark mx-5 p-5">
+        <div class="col-12 col-lg-4 d-flex justify-content-center my-5" id="textbg1">
+            <img src="{% static 'chat_feature/images/sdg.jpg' %}" alt="textbg1" class="img-responsive contentImage" width="80%">
+            <!-- <iframe src="https://drive.google.com/file/d/1A3SRetN6lD-uYjdWzDpRVBKrdYOU37hn/preview" width="640"
+                height="360" allowfullscreen class="my-4"></iframe> -->
+        </div>
+        <div class="col-12 col-lg-8">
+            <p class="content text-left text-lg-right"> <span class="bold">Well-being Adda is a project taken up by Enactus
+                    IIITD and targets the 3rd UN SDG of Good Health and Well-being.</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="d-flex row mx-0 align-items-center section light mb-5 mx-5 py-5">
+        <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-center stats">
+            <img src="{% static 'chat_feature/images/1in4.png' %}" class="img-responsive statImg opMedium" width="250px" alt="">
+            <div class="imgText highlight">
+                1 in 4 students suffer from emotional instability
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-center stats">
+            <img src="{% static 'chat_feature/images/rank.png' %}" class="img-responsive statImg opLow" width="250px" alt="">
+            <div class="imgText highlight">
+                India ranked 144/256 in UN's World Happiness Report
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-center stats">
+            <img src="{% static 'chat_feature/images/28percent.png' %}" class="img-responsive statImg opMedium" width="250px" alt="">
+            <div class="imgText highlight">
+                Only 28% Indians consider themselves happy
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-center stats">
+            <img src="{% static 'chat_feature/images/people.png' %}" class="img-responsive statImg opRegular" width="250px" alt="">
+            <div class="imgText highlight">
+                150mn people in India need care for their mental health condition
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- <div class="d-flex row mx-0 align-items-center">
         <div class="col-6 d-none d-md-block" id="textbg2">
             <img src="{% static 'chat_feature/images/textbg2.png' %}" alt="textbg2" class="img-responsive" width="100%">
         </div>
@@ -143,8 +198,9 @@
                 illum assumenda delectus, eos modi maiores amet, adipisci nihil pariatur hic quia quaerat. Aperiam.
             </p>
         </div>
-    </div>
+    </div> -->
 </div>
+
 <div class="border-top border-secondary mt-5" id="foot">
     <div class="container">
         <p class="content ending-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sunt veniam

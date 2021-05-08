@@ -123,11 +123,14 @@ def profile(request):
 def about(request):
     return render(request, 'chat_feature/about.html')
 
-def projects(request):
-    return render(request, 'chat_feature/projects.html')
+def events(request):
+    return render(request, 'chat_feature/events.html')
 
 def posts(request):
     return render(request, 'chat_feature/posts.html')
 
 def team(request):
     return render(request, 'chat_feature/team.html')
+
+def contactus(request):
+    return render(request, 'chat_feature/contactus.html')

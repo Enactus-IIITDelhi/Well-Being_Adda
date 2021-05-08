@@ -1,0 +1,27 @@
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'ChatRooms/css/chatroomIndex.css' %}">
+<div class="background">
+    <img src="{% static 'ChatRooms/images/index_bg.jpg' %}" alt="">
+</div>
+<div class="navSpacer"></div>
+<div class="wrapper">
+    <div class="form-bhar">
+    <form method="post" novalidate>
+        {% csrf_token %}
+        {{form.as_p}}
+        <input id="room-name-submit" type="submit" value="Submit" class="btn btn-primary px-5 button">
+    </form>
+    </div>
+    {% for i in chats %}
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{i.name}}</h5>
+            <a href="{% url 'chat_feature:room' i.name %}" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+</script>
+{% endblock %}

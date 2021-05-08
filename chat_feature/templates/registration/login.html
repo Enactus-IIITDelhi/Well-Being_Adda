@@ -1,0 +1,51 @@
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'Login/css/login.css' %}">
+<script src="{% static 'Login/js/loginScript.js' %}"></script>
+{% if form.errors %}
+<p class="warning">Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+{% if next %}
+{% if user.is_authenticated %}
+<div class="warningRadius">
+    <p class="warning">Your account doesn't have access to this page. To proceed,
+        please login with an account that has access.</p>
+</div>
+{% else %}
+<div class="warningRadius">
+    <p class="warning">Please login to see this page.</p>
+</div>
+{% endif %}
+{% endif %}
+
+<div class="background">
+    <img src="{% static 'Login/images/bg.jpg' %}" alt="">
+</div>
+
+<form method="post" action="" class="login-kar">
+    {% csrf_token %}
+    <div class="outerRadius">
+        <table>
+            <tr>
+                <td>{{ form.username.label_tag }}</td>
+                <td class="table-textField">{{ form.username }}</td>
+                <td><br>
+                    <div class="separator"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>{{ form.password.label_tag }}</td>
+                <td class="table-textField">{{ form.password }}</td>
+            </tr>
+        </table>
+        <br>
+        <input class="subBtn btn btn-primary" type="submit" value="login" />
+        <input type="hidden" name="next" value="{{ next }}" />
+    </div>
+
+</form>
+
+
+{% endblock %}

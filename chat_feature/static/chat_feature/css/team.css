@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+.view {
+    height: 100%;
+}
+
+.header {
+    padding-top: 132px;
+    background-color: #FFCEC8;
+}
+
+.sub-heading {
+    color: #2D2B3B;
+    font-size: 60px;
+    padding-bottom: 56px;
+}
+
+.master {
+    margin: auto;
+}
+
+.card-img-top {
+    margin: auto;
+    max-width: 15rem;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.card {
+    width: 19rem;
+    border: 1px solid rgb(153, 153, 153) !important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    /* border-radius: 10px; */
+}
+
+.card-header {
+    font-size: 25px;
+    font-family: 'Staatliches', cursive;
+    font-weight: lighter;
+    border-radius: 10px;
+    background-color: #ececec;
+    border-bottom: 1px solid rgb(153, 153, 153) !important;
+}
+
+.card-title {
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+}
+
+.teamIntro {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

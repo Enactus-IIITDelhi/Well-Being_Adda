@@ -1,0 +1,22 @@
+{% extends './base.html' %}
+{% load static %}
+{% block body %}
+<link rel="stylesheet" href="{% static 'Register/css/register.css' %}">
+<div class="background">
+    <img src="{% static 'Register/images/bg.jpg' %}" alt="">
+</div>
+<div class="navSpacer"></div>
+<div class="wrapper d-flex justify-content-center align-content-center">
+    <div class="register-kar">
+        <div class="formRadius">
+            <form method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" value="Register" class="btn btn-success">
+            </form>
+        </div>
+    </div>
+</div>
+<script src="{% static 'Register/js/register.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,45 @@
+body {
+    background-color: white;
+}
+
+.sub-heading {
+    font-size: 60px;
+    padding-top: 40px;
+    color: #2D2B3B;
+    text-align: center;
+}
+
+.icons {
+    padding-bottom: 40px;
+    color: #EA488C;
+}
+
+.separator {
+    font-family: 'Courier New', Courier, monospace;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    font-size: 100px;
+    font-weight: normal;
+}
+
+.iconItem {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fa-instagram {
+    color: #EA488C;
+}
+
+.fa-wordpress {
+    color: #207196;
+}
+
+.postsIntro {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.intro {
+    background-color: #FFCEC8;
+}

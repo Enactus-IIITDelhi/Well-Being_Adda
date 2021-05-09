@@ -21,4 +21,12 @@ urlpatterns = [
     path('expOjasvi', views.expOjasvi, name="expOjasvi"),
     path('newsLY', views.newsLY, name="newsLY"),
     path('newsWellBeing', views.newsWellBeing, name="newsWellBeing"),
+    path('eventArtTherapy', views.eventArtTherapy, name="eventArtTherapy"),
+    path('eventMentalMyths', views.eventMentalMyths, name="eventMentalMyths"),
+    path('eventMentalStigma', views.eventMentalStigma, name="eventMentalStigma"),
+    path('eventSelfHub', views.eventSelfHub, name="eventSelfHub"),
+    path('eventSuicidePrevention', views.eventSuicidePrevention, name="eventSuicidePrevention"),
+    path('eventThankful', views.eventThankful, name="eventThankful"),
+    path('eventChildhood', views.eventChildhood, name="eventChildhood"),
+    path('eventSofia', views.eventSofia, name="eventSofia"),
 ]

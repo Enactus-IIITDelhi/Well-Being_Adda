@@ -13,5 +13,14 @@
 
 .cardList {
     padding-top: 0 !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
+}
+
+.bg {
+    background-color: #fafafa;
+    border: 1px solid #da7366 !important;
+}
+
+.card-header {
+    border-bottom: 1px solid #da7366 !important;
 }

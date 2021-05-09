@@ -1,0 +1,30 @@
+.slick_container {
+    background-color: #FFEBE7;
+    padding-bottom: 20px;
+}
+
+.slick-dots li button:before {
+    color: #333333 !important;
+}
+
+.slick-next:before, .slick-prev:before {
+    color: #333333 !important;
+}
+
+.slideItem {
+    margin: 0 10px;
+}
+
+.spacer {
+    min-height: 60px;
+}
+
+.header {
+    padding: 40px;
+}
+
+.sub-heading {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}

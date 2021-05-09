@@ -149,3 +149,27 @@ def newsLY(request):
 
 def newsWellBeing(request):
     return render(request, 'chat_feature/newsWellBeing.html')
+
+def eventArtTherapy(request):
+    return render(request, 'chat_feature/eventArtTherapy.html')
+
+def eventMentalMyths(request):
+    return render(request, 'chat_feature/eventMentalMyths.html')
+
+def eventMentalStigma(request):
+    return render(request, 'chat_feature/eventMentalStigma.html')
+
+def eventSelfHub(request):
+    return render(request, 'chat_feature/eventSelfHub.html')
+
+def eventSuicidePrevention(request):
+    return render(request, 'chat_feature/eventSuicidePrevention.html')
+
+def eventChildhood(request):
+    return render(request, 'chat_feature/eventChildhood.html')
+
+def eventThankful(request):
+    return render(request, 'chat_feature/eventThankful.html')
+
+def eventSofia(request):
+    return render(request, 'chat_feature/eventSofia.html')

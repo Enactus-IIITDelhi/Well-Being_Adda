@@ -6,6 +6,3 @@ $(document).ready(function(){
         autoplaySpeed: 3000
       });
 })
-
-
-console.log("YEET");

@@ -1,0 +1,96 @@
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Suicide Prevention | Well Being Adda</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'chat_feature/css/team.css' %}">
+<link rel="stylesheet" href="{% static 'chat_feature/css/events.css' %}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" />
+
+<!-- <div class="scrollIcon"><i class="fas fas fa-arrow-circle-down fa-2x d-none d-lg-block"></i></div> -->
+<div class="spacer"></div>
+
+<div class="slick_container">
+    <div class="container slideshow">
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/suicideprevention1.png' %}" height="400px">
+            <!-- <div class="d-flex row mx-0 align-items-center center">
+                <div class="col-12 text-center">
+                    <div class="my-5 d-none d-md-inline">
+                        <h1 class="sub-heading">Enactus IIITD</h1>
+                        <h1 class="display-2 heading">Well-Being Adda</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 content-align-left">
+                    {% load static %}
+                    <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}"
+                        class="img-responsive landingLogo" width="100%">
+                </div>
+            </div> -->
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/suicideprevention2.png' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/suicideprevention3.png' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/suicideprevention4.png' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/suicideprevention5.png' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/suicideprevention6.png' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/suicideprevention7.png' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/suicideprevention8.png' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/suicideprevention9.png' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/suicideprevention10.png' %}" height="400px">
+        </div>
+    </div>
+</div>
+
+<div class="header d-flex justify-content-center mx-0 mt-5 mx-md-5 p-md-5">
+    <h1 class="sub-heading">Suicide Prevention</h1>
+</div>
+
+<!-- <div class="d-flex row mx-0 align-items-center section light mt-5 mx-md-5 p-md-5 d-none">
+    <div class="col-12 col-lg-8">
+        <p class="content"> <span class="bold">Session on Mental Health and Stigma Around It in collaboration with
+                Myndprime.</span>
+            <br>
+            On 16th April 2021, we organised a Session on <span class="high">Mental Health and Stigma Around It</span>
+            in collaboration with <span class="high">Myndprime</span> for students in <span class="high">classes 5th to
+                12th</span>. The speaker for the session was <span class="high">Meraj Mir, a psychologist and
+                psychotherapist</span> from Myndprime. The session covered the topics of aspects of health, about mental
+            health, mental health versus physical health, lingo of mental health, followed by Q&A session.
+
+
+        </p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex justify-content-center" id="textbg1">
+        <img src="{% static 'chat_feature/images/mentalmythsHolder.png' %}" alt="textbg1" class="img-responsive"
+            width="100%">
+    </div>
+</div> -->
+
+<script src="{% static 'chat_feature/js/eventCarousel.js' %}"></script>
+{% endblock %}

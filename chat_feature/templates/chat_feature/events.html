@@ -6,5 +6,175 @@
 {% endblock %}
 
 {% block body %}
+<link rel="stylesheet" href="{% static 'chat_feature/css/team.css' %}">
+<link rel="stylesheet" href="{% static 'chat_feature/css/blogs.css' %}">
+
+<div class="header d-flex justify-content-center">
+    <h1 class="sub-heading">events</h1>
+</div>
+
+<div class="d-flex row mx-0 align-items-center section light mt-5 mx-md-5 p-md-5">
+    <div class="col-12 col-lg-8">
+        <!-- <h1 class="display5 heading-content text-center">About Well-Being Adda</h1> -->
+        <p class="content"> <span class="bold">At Well-Being Adda, we aim to create a helpful environment for
+                everyone.</span>
+            <br>
+            As a part of this initiative, we organise various sessions and social media events to help expand the idea
+            of mental and physical wellbeing. Every moment can be improved by making small positive changes. Our events
+            promote the very same.
+        </p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex justify-content-center" id="textbg1">
+        <img src="{% static 'chat_feature/images/eventsHolder.png' %}" alt="textbg1" class="img-responsive"
+            width="80%">
+        <!-- <iframe src="https://drive.google.com/file/d/1A3SRetN6lD-uYjdWzDpRVBKrdYOU37hn/preview" width="640"
+            height="360" allowfullscreen class="my-4"></iframe> -->
+    </div>
+</div>
+
+<div class="container master d-flex justify-content-center">
+    <div class="row p-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex newsletter justify-content-center">Art therapy</div>
+                <div class="card-body">
+                    <!-- <h5 class="card-title text-center">ojasvi</h5> -->
+                    <p class="card-text">
+                        We conducted an Art Therapy Session with Ms. Shalimali Jhadhav on 20th January 2021.
+                        The session had various therapeutic activities like sketching
+                        based on emotions and writing down thoughts, that helped in discovering one’s own
+                        thoughts. The session emphasised on giving time to oneself to relax.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:eventArtTherapy' %}" target="_blank" class="btn btn-primary">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex newsletter justify-content-center">Mental Health & Myths</div>
+                <div class="card-body">
+                    <!-- <h5 class="card-title text-center">ojasvi</h5> -->
+                    <p class="card-text">
+                        We conducted a session about mental health and the myths surrounding it on 16th February 2021.
+                        Mental Health has remained a taboo and is a neglected topic with innumerable myths
+                        and misconceptions and we shed light on these myths and taboos and how to overcome these
+                        misconceptions.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:eventMentalMyths' %}" target="_blank"
+                            class="btn btn-primary">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex newsletter justify-content-center text-center">Mental Health & Stigma
+                </div>
+                <div class="card-body">
+                    <!-- <h5 class="card-title text-center">ojasvi</h5> -->
+                    <p class="card-text">A Session on Mental Health and Stigma Around It in collaboration with Myndprime
+                        for students in classes 5th to 12th. The session covered the topics of aspects of health, about
+                        mental health, mental health versus physical health, lingo of mental health, followed by Q&A
+                        session.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:eventMentalStigma' %}" target="_blank"
+                            class="btn btn-primary mt-4">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex newsletter justify-content-center text-center">SELF HUB Program</div>
+                <div class="card-body">
+                    <!-- <h5 class="card-title text-center">ojasvi</h5> -->
+                    <p class="card-text">Weekly sessions were held for
+                        students in classes 7th to 10th, to encourage conversation around relatable
+                        well-being topics such as peer pressure, bullying, procrastination, stress management,
+                        gratitude, and more. The sessions included video screenings and interactive
+                        activities that urged the students to introspect.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:eventSelfHub' %}" target="_blank" class="btn btn-primary">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex newsletter justify-content-center text-center">Childhood unplugged</div>
+                <div class="card-body">
+                    <!-- <h5 class="card-title text-center">ojasvi</h5> -->
+                    <p class="card-text pb-1">
+                        We introduced an online story challenge for our instagram followers.
+                        The challenge was pretty simple, all they had to do was upload a picture or a video of something
+                        that reminds them of their childhood and nominate their friends to do the same.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:eventChildhood' %}" target="_blank"
+                            class="btn btn-primary mt-5">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex newsletter justify-content-center text-center">I am thankful for</div>
+                <div class="card-body">
+                    <!-- <h5 class="card-title text-center">ojasvi</h5> -->
+                    <p class="card-text pb-1">
+                        We had an instagram story challenge for our followers called #IAmThankfulFor.
+                        the challenge asked the followers to upload an appreciate story for someone or something they
+                        are thankful to have in their life with the hashtag #IAmThankfulFor.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:eventThankful' %}" target="_blank"
+                            class="btn btn-primary mt-5">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex newsletter justify-content-center text-center">Suicide Prevention</div>
+                <div class="card-body">
+                    <!-- <h5 class="card-title text-center">ojasvi</h5> -->
+                    <p class="card-text">
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:eventSuicidePrevention' %}" target="_blank"
+                            class="btn btn-primary">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex newsletter justify-content-center text-center">Sofia SMART Centre</div>
+                <div class="card-body">
+                    <!-- <h5 class="card-title text-center">ojasvi</h5> -->
+                    <p class="card-text">
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:eventSofia' %}" target="_blank" class="btn btn-primary">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
 
 {% endblock %}

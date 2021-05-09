@@ -23,16 +23,17 @@ body {
 }
 
 .iconItem {
+    color: white;
     margin-left: 5px;
     margin-right: 5px;
 }
 
 .fa-instagram {
-    color: #EA488C;
+    color: #EA488C !important;
 }
 
-.fa-wordpress {
-    color: #207196;
+.fa-facebook {
+    color: #1773EA !important;
 }
 
 .postsIntro {

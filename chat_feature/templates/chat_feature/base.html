@@ -50,8 +50,7 @@
                                 class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'chat_feature:blogs'%}">blogs<span
-                                class="sr-only"></span></a>
+                        <a class="nav-link" href="{% url 'chat_feature:blogs'%}">blogs<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'chat_feature:posts'%}">Posts<span class="sr-only"></span></a>
@@ -66,13 +65,16 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://www.instagram.com/wellbeingadda/"><i class="fab fa-instagram"></i></a>
+                        <a class="nav-link" target="_blank" href="https://www.instagram.com/wellbeingadda/"><i
+                                class="fab fa-instagram"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://www.facebook.com/wellbeingadda"><i class="fab fa-facebook"></i></a>
+                        <a class="nav-link" target="_blank" href="https://www.facebook.com/wellbeingadda"><i
+                                class="fab fa-facebook"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="mailto: thewellbeingadda@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a class="nav-link" target="_blank" href="mailto: thewellbeingadda@gmail.com"><i
+                                class="fas fa-envelope"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link d-none" href="{% url 'login' %}">Log in<span class="sr-only"></span></a>
@@ -116,18 +118,38 @@
     {% endblock %}
     <div class="border-top border-secondary mt-5" id="foot">
         <div class="container">
-            <p class="content ending-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sunt veniam
-                atque voluptatibus est distinctio culpa dolore eveniet neque labore alias non officiis odit voluptates
-                quia sint, deserunt repudiandae? Excepturi!</p>
-            <div class="d-flex row mx-0 align-items-center">
-                <div class="col-6 text-center mb-5">
-                    <p class="content ending-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-                        aliquam.</p>
+            <div class="row">
+                <div class="content ending-text col-12 col-sm-6 d-flex justify-content-start">
+                    <div class="d-flex align-content-start flex-column">
+                        <div>
+                            <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}" width="30"
+                            height="30" class="d-inline-block align-top mr-1" alt="" loading="lazy">
+                            Well-Being Adda
+                        </div>
+                        <div class="footerLeft">
+                            An initiative by Enactus IIITD.
+                        </div>
+                        <div class="footerSmall my-2 footerLeft">
+                            We aim to promote emotional health and holistic well-being. Our initiatives target the stigma around
+                            mental health, raise awareness about well-being, create solutions to make emotional support and
+                            therapy more accessible and affordable and build an engaging and supportive community.
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 text-center mb-5">
-                    <p class="content ending-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
-                        quos!</p>
+                <div class="content ending-text col-12 col-sm-6 d-flex justify-content-end mb-5">
+                    <a class="footer" target="_blank" href="https://www.instagram.com/wellbeingadda/"><i
+                            class="fab fa-instagram fa-2x ig"></i></a>
+                    <a class="footer" target="_blank" href="https://www.facebook.com/wellbeingadda"><i
+                            class="fab fa-facebook fa-2x fb"></i></a>
+                    <a class="footer" target="_blank" href="mailto: thewellbeingadda@gmail.com"><i
+                            class="fas fa-envelope fa-2x email"></i></a>
+                    <a class="footer" target="_blank"
+                        href="https://docs.google.com/forms/d/13eEFzGjHQMMyUsmPyCWRnI3kQr2dVGROzUttWHF2Bzc/viewform?edit_requested=true"><i
+                            class="fas fa-align-justify fa-2x ml-3"></i></a>
                 </div>
+                <!-- <div class="content ending-text col-12 col-sm-6 d-flex justify-content-start">
+                    An initiative by Enactus IIITD.
+                </div> -->
             </div>
         </div>
     </div>

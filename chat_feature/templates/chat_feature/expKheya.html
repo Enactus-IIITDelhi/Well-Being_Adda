@@ -1,0 +1,53 @@
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Experiences | Well Being Adda</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'chat_feature/css/team.css' %}">
+<link rel="stylesheet" href="{% static 'chat_feature/css/experiences.css' %}">
+
+<div class="header d-flex justify-content-center">
+    <h1 class="sub-heading">Experiences</h1>
+</div>
+
+<div class="container">
+
+    <div class="section light mt-5 mx-0 p-4 mx-md-5 p-md-5">
+        <div class="d-block">
+            <h1 class="heading-content text-center expName">Kheya</h1>
+            <p class="content">
+                I can vividly remember the time when I was in kindergarten, and no one would play with me solely because
+                I wasn't fair-skinned enough. I was repeatedly told by the other children that I wasn't good enough to
+                play with them due to my skin colour. I can also remember the time in second grade when no one at the
+                table would talk to me and would refuse to share my tiffin because they believed it would be "polluted."
+                As a child, I hated myself; I wished I could bleach my skin white so that the other kids would talk and
+                play with me. But, then came fourth grade, when I won my first ever award for solo singing. I remember
+                everyone wanting to be my friend, everyone wanting to touch the trophy. For the first time, I knew what
+                it was like to be accepted. It felt exhilarating. Slowly but surely, it was through music that I was
+                able to gain a sense of self-worth. It was music that gave me hope that something in me would make me
+                feel accepted by my classmates. My school years went by with me being heavily involved in music; it was,
+                and to date is my shield.
+            </p>
+            <p class="content">
+                Even though I no longer repulsed my peers, I still had a hard time talking to most of them and thought
+                twice before expressing my thoughts, for there was a part of me that always believed that I was not good
+                enough for them. Through the years, I have learnt to love and embrace myself as I am. There are still
+                times where I feel worthless, but deep down, I know that this isn't true. The journey to self-love has
+                been a slow and rocky one, but I've grown throughout the journey. My journey hasn't ended yet, but I
+                know that there was and always will be hope.
+            </p>
+        </div>
+        <div class="d-flex justify-content-center" id="textbg1">
+            <img src="{% static 'chat_feature/images/textbg1.png' %}" alt="textbg1" class="img-responsive" width="50%">
+            <!-- <iframe src="https://drive.google.com/file/d/1A3SRetN6lD-uYjdWzDpRVBKrdYOU37hn/preview" width="640"
+                height="360" allowfullscreen class="my-4"></iframe> -->
+        </div>
+    </div>
+</div>
+
+<div class="footerSpace"></div>
+
+{% endblock %}

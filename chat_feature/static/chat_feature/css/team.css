@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: white;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
     height: 100%;
 }
 
@@ -51,6 +51,14 @@ body {
     border-radius: 10px;
     background-color: #ececec;
     border-bottom: 1px solid rgb(153, 153, 153) !important;
+}
+
+.experiences {
+    background-color: #FFF3F1;
+}
+
+.newsletter {
+    background-color: #ffdfdb;
 }
 
 .card-title {

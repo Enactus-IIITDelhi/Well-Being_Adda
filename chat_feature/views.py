@@ -134,3 +134,18 @@ def team(request):
 
 def contactus(request):
     return render(request, 'chat_feature/contactus.html')
+
+def blogs(request):
+    return render(request, 'chat_feature/blogs.html')
+
+def expKheya(request):
+    return render(request, 'chat_feature/expKheya.html')
+
+def expOjasvi(request):
+    return render(request, 'chat_feature/expOjasvi.html')
+
+def newsLY(request):
+    return render(request, 'chat_feature/newsLY.html')
+
+def newsWellBeing(request):
+    return render(request, 'chat_feature/newsWellBeing.html')

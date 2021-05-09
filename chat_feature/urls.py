@@ -16,4 +16,9 @@ urlpatterns = [
     path('posts', views.posts, name="posts"),
     path('team', views.team, name="team"),
     path('contactus', views.contactus, name="contactus"),
+    path('blogs', views.blogs, name="blogs"),
+    path('expKheya', views.expKheya, name="expKheya"),
+    path('expOjasvi', views.expOjasvi, name="expOjasvi"),
+    path('newsLY', views.newsLY, name="newsLY"),
+    path('newsWellBeing', views.newsWellBeing, name="newsWellBeing"),
 ]

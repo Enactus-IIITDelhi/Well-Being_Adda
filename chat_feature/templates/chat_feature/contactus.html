@@ -1,11 +1,31 @@
 {% extends 'chat_feature/base.html' %}
 {% load static %}
+
+{% block head %}
+<title>Contact Us | Well Being Adda</title>
+{% endblock %}
+
 {% block body %}
+<link rel="stylesheet" href="{% static 'chat_feature/css/index.css' %}">
 <link rel="stylesheet" href="{% static 'chat_feature/css/contactus.css' %}">
 
-<div class="container main">
+<div class="main">
     <div class="centerAlign">
-        
+        <h1> <span class="bold text-center">Connect with us!</span> </h1>
+        <div class="links d-flex justify-content-center">
+            <a class="link d-inline" target="_blank" href="https://www.instagram.com/wellbeingadda/"><i
+                    class="fab fa-instagram fa-3x ig"></i></a>
+            <a class="link d-inline" target="_blank" href="https://www.facebook.com/wellbeingadda"><i
+                    class="fab fa-facebook fa-3x fb"></i></a>
+            <a class="link d-inline" target="_blank" href="mailto: thewellbeingadda@gmail.com"><i
+                    class="fas fa-envelope fa-3x email"></i></a>
+        </div>
+        <h1> <span class="bold feedback text-center">Share your experiences, feedback, suggestions</span></h1>
+        <div class="links d-flex justify-content-center">
+            <a class="link d-inline" target="_blank"
+                href="https://docs.google.com/forms/d/13eEFzGjHQMMyUsmPyCWRnI3kQr2dVGROzUttWHF2Bzc/viewform?edit_requested=true"><i
+                    class="fas fa-align-justify fa-3x"></i></a>
+        </div>
     </div>
 </div>
 {% endblock %}

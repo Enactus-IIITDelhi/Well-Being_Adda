@@ -1,3 +1,37 @@
+body {
+    background-color: black;
+}
+
+.main {
+    position: relative;
+    background-image: linear-gradient(to bottom right, #ffaaaf, #ee6ec8);
+    /* background-image: linear-gradient(to bottom right, #ffaaaf, #ff7cd8); */
+    height: 100%;
+    width: 100%;
+}
+
+.bold {
+    /* font-family: 'bebas neue', sans-serif; */
+    color: white ;
+    font-size: 40px;
+    /* font-weight: 500 ; */
+}
+
+.link {
+    color: white;
+    margin: 10px;
+}
+
+.bgImg {
+    /* opacity: 0.8; */
+    /* height: 100vh; */
+    /* width: 100vw; */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .centerAlign {
     position: absolute;
@@ -5,3 +39,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.feedback {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.fb, .ig, .email {
+    color: white !important;
+}
+

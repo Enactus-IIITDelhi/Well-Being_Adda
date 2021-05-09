@@ -245,6 +245,18 @@ body {
     opacity: 0.3;
 }
 
+.fa-facebook {
+    color: #1773EA !important;
+}
+
+.fa-instagram {
+    color: #EA488C !important;
+}
+
+.fa-envelope {
+    color: rgb(236, 236, 236);
+}
+
 /* 
 .carousel,
 .carousel-item,

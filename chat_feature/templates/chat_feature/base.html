@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 
 <head>
+    {% block head %}
+    {% endblock %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -48,6 +50,10 @@
                                 class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'chat_feature:blogs'%}">blogs<span
+                                class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{% url 'chat_feature:posts'%}">Posts<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
@@ -63,12 +69,10 @@
                         <a class="nav-link" target="_blank" href="https://www.instagram.com/wellbeingadda/"><i class="fab fa-instagram"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="https://www.facebook.com/wellbeingadda"><i class="fab fa-facebook"></i><span
-                                class="sr-only"></span></a>
+                        <a class="nav-link" target="_blank" href="https://www.facebook.com/wellbeingadda"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="mailto: thewellbeingadda@gmail.com"><i class="fas fa-envelope"></i><span
-                                class="sr-only"></span></a>
+                        <a class="nav-link" target="_blank" href="mailto: thewellbeingadda@gmail.com"><i class="fas fa-envelope"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link d-none" href="{% url 'login' %}">Log in<span class="sr-only"></span></a>

@@ -10,7 +10,7 @@ from django.core.mail import send_mail, send_mass_mail
 universal_chats = list(Chat.objects.filter(universal_chat = True))
 
 def send_invite(emails,sender,room_name):
-    msg = f"Hi you have invited to chat by {sender}. The Link is http://localhost:8000/chat/{room_name}/"
+    msg = f"Hi you have invited to chat by {sender}. The Link is {reverse('chat_feature:room',kwargs={'room_name': room_name})}"
     send_mail(
         subject="Invitation to chatroom",
         message=msg,
@@ -48,20 +48,30 @@ def chat_index(request):
 @login_required()
 def room(request, room_name):
     chat = Chat.objects.get(name=room_name)
+    contact = Contact.objects.get(user=request.user)
+    chats = contact.chat_set.all()
+    cont = {
+        "contact": contact,
+        'chats': chats
+    }
     if chat in universal_chats:
         contact = Contact.objects.get(user=request.user)
         chat.participants.add(contact)
         chat.save()
-        return render(request, 'chat_feature/chat_room.html', {
-            'room_name': room_name
-        })
+        return render(request, 'chat_feature/chat_room.html',context=cont)
     elif chat.participants.filter(user=request.user).exists():
-        return render(request, 'chat_feature/chat_room.html', {
-            'room_name': room_name
-        })
+        return render(request, 'chat_feature/chat_room.html', context=cont)
     else:
         return render(request,'chat_feature/no_access.html')
 
+@login_required()
+def chat(request):
+    contact = Contact.objects.get(user=request.user)
+    chats = contact.chat_set.all()
+    cont = {
+        "chats":chats
+    }
+    return render(request,"chat_feature/chat.html",context=cont)
 
 def register(request):
     if request.method == "GET":
@@ -109,8 +119,9 @@ def profile(request):
     elif request.method == "POST":
         user = request.user
         contact = Contact.objects.get(user=user)
-        first_name = request.POST['name'].strip()
-        user.first_name = first_name
+        temp = request.POST['name'].strip().split(" ")
+        user.first_name = temp[0]
+        user.last_name = temp[1]
         user.email = request.POST['email']
         user.username = request.POST['username']
         if request.POST['new_password1'] == request.POST['new_password2'] and len(request.POST['new_password1']) != 0:

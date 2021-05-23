@@ -1,0 +1,66 @@
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>#IAmThankfulFor | Well Being Adda</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'chat_feature/css/team.css' %}">
+<link rel="stylesheet" href="{% static 'chat_feature/css/events.css' %}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" />
+
+<!-- <div class="scrollIcon"><i class="fas fas fa-arrow-circle-down fa-2x d-none d-lg-block"></i></div> -->
+<div class="spacer"></div>
+
+<div class="slick_container">
+    <div class="container slideshow">
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/gratitudechallenge1.jpg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/gratitudechallenge2.jpg' %}" height="400px">
+        </div>
+    </div>
+</div>
+
+<div class="header d-flex justify-content-center mx-0 mt-5 mx-md-5 p-md-5">
+    <h1 class="sub-heading">#IAmThankfulFor</h1>
+</div>
+
+<div class="d-flex row mx-0 align-items-center section light mt-5 mx-md-5 p-md-5">
+    <div class="col-12 col-lg-8">
+        <!-- <h1 class="display5 heading-content text-center">About Well-Being Adda</h1> -->
+        <p class="content"> <span class="bold"> Upload an appreciate story for someone or something one is thankful to
+                have in their life.</span>
+            <br>
+            On 23rd August 2021 we had an <span class="high">instagram story challenge</span> for our followers called
+            <span class="high">#IAmThankfulFor</span>. The Covid 19 pandemic was on a rise in India (from where our
+            majority of followers are from) and we felt it was important to practice gratitude in these grim times.
+            <br>We wanted our followers to <span class="high">remind themselves of all they have</span> that makes their
+            lives better but they <span class="high">may take it for granted</span>. The challenge had people posting
+            about all the beautiful things in the world from <span class="high">friends and family</span> to <span
+                class="high">pretty views</span> and <span class="high">insightful literature</span>. Well-Being Adda
+            reshared all the stories to remind everyone of the <span class="high">good things in life</span>. Around 35
+            stories were posted for the challenge.
+
+
+        </p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex justify-content-center" id="textbg1">
+        <img src="{% static 'chat_feature/images/thankful.png' %}" alt="textbg1" class="img-responsive"
+            width="80%" style="border-radius: 20px;">
+        <!-- <iframe src="https://drive.google.com/file/d/1A3SRetN6lD-uYjdWzDpRVBKrdYOU37hn/preview" width="640"
+            height="360" allowfullscreen class="my-4"></iframe> -->
+    </div>
+</div>
+
+<script src="{% static 'chat_feature/js/eventCarousel.js' %}"></script>
+{% endblock %}

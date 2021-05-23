@@ -1,0 +1,109 @@
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Blogs | Well Being Adda</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'chat_feature/css/team.css' %}">
+<link rel="stylesheet" href="{% static 'chat_feature/css/blogs.css' %}">
+
+<div class="header d-flex justify-content-center">
+    <h1 class="sub-heading">blogs</h1>
+</div>
+
+<div class="container master d-flex justify-content-center">
+    <div class="row p-3">
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex newsletter justify-content-center">blog</div>
+                <ul class="list-group list-group-flush">
+                    <li class="card-title text-center list-group-item">Love yourself</li>
+                </ul>
+                <div class="card-body">
+                    <!-- <h5 class="card-title text-center">love yourself</h5> -->
+                    <p class="card-text">In this issue:
+                    <ul class="cardList">
+                        <li>Defination of Self Love</li>
+                        <li>Facets of well being
+                            <ul>
+                                <li>Physical</li>
+                                <li>Psychological</li>
+                                <li>Social</li>
+                                <li>Spiritual</li>
+                                <li>Intellectual</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:newsLY' %}" target="_blank" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex newsletter justify-content-center">blog</div>
+                <ul class="list-group list-group-flush">
+                    <li class="card-title text-center list-group-item">What is well-being?</li>
+                </ul>
+                <div class="card-body">
+                    <!-- <h5 class="card-title text-center">love yourself</h5> -->
+                    <p class="card-text">In this issue:
+                    <ul class="cardList">
+                        <li>What is well-being?</li>
+                        <li>Facets of well being
+                            <ul>
+                                <li>Physical</li>
+                                <li>Psychological</li>
+                                <li>Social</li>
+                                <li>Spiritual</li>
+                                <li>Intellectual</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:newsWellBeing' %}" target="_blank" class="btn btn-primary">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex experiences justify-content-center">experiences</div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Kheya</h5>
+                    <p class="card-text">I can vividly remember the time when I was in kindergarten, and no one would
+                        play with me solely because I wasn't fair-skinned enough. I was repeatedly told by the other
+                        children that I wasn't good enough to play with them due to my skin...</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:expKheya' %}" target="_blank" class="btn btn-primary mt-3">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 columns">
+            <div class="card border-light bg">
+                <div class="card-header d-flex experiences justify-content-center">experiences</div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">ojasvi</h5>
+                    <p class="card-text">Right from a little shy girl who wouldn’t talk to anyone to a much more
+                        confident person who is telling you this story, that's what self-love did to me. To begin with,
+                        it's easy to love someone else but much more difficult to love yourself. I have always been a
+                        studious...</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'chat_feature:expOjasvi' %}" target="_blank" class="btn btn-primary mt-3">Read
+                            more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

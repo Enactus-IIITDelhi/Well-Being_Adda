@@ -1,0 +1,44 @@
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Posts | Well Being Adda</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'chat_feature/css/posts.css' %}">
+
+<div class="spacer"></div>
+
+<div class="intro">
+    <h1 class="sub-heading d-flex align-items-center justify-content-center">Our digital content</h1>
+    <div class="icons d-flex justify-content-center">
+        <a class="iconItem" href="https://www.instagram.com/wellbeingadda/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+        <a class="iconItem" href="https://www.facebook.com/wellbeingadda/" target="_blank"><i class="fab fa-facebook fa-3x iconItem"></i></a>
+    </div>
+</div>
+
+
+<div class="d-flex row mx-0 align-items-center section light mt-5 mx-md-5 p-md-5 mb-5">
+    <div class="col-12 col-lg-8">
+        <!-- <h1 class="display5 heading-content text-center">About Well-Being Adda</h1> -->
+        <p class="content"> <span class="bold"> We want to see a world where a healthy lifestyle naturally includes a healthy state of mind.</span>
+            <br>
+            In the age of social media, Instagram and Facebook play a crucial role in helping us reach a big diverse audience. Our social media helps us expand our audience’s knowledge on various subjects like well-being, self love, imposter syndrome, body positivity, etc. 
+            <br> <br> What separates us from thousands of other similar pages on instagram is that we also feature personal experiences from people all over the world that help others in their attain a deep perspective about a topic and help them on their journey of achieving a healthy lifestyle and well-being. We want to see a world where people talk about mental health like they talk about their physical health and where a healthy lifestyle also includes a healthy state of mind. 
+        </p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex justify-content-center" id="textbg1">
+        <img src="{% static 'chat_feature/images/people.png' %}" alt="textbg1" class="img-responsive"
+            width="60%">
+        <!-- <iframe src="https://drive.google.com/file/d/1A3SRetN6lD-uYjdWzDpRVBKrdYOU37hn/preview" width="640"
+            height="360" allowfullscreen class="my-4"></iframe> -->
+    </div>
+</div>
+
+<!-- instagram feed -->
+<div class="embedsocial-hashtag" data-ref="c6c35253dc4697879a65bad30bb2eb5c8977772b"><a class="feed-powered-by-es"
+        href="https://embedsocial.com/products/embedfeed/" target="_blank" title="Powered by EmbedSocial">Powered by
+        EmbedSocial<span>→</span></a></div>
+<script>(function (d, s, id) { var js; if (d.getElementById(id)) { return; } js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript"));</script>
+{% endblock %}

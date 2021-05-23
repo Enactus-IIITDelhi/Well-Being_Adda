@@ -1,0 +1,57 @@
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Contact Us | Well Being Adda</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'chat_feature/css/contactus.css' %}">
+<link rel="stylesheet" href="{% static 'chat_feature/css/team.css' %}">
+
+<div class="header d-flex justify-content-center">
+    <h1 class="sub-heading">Contact Us</h1>
+</div>
+
+<div class="d-flex row mx-0 align-items-center section light mt-5 mx-md-5 p-md-5">
+    <div class="col-12 col-lg-8">
+        <!-- <h1 class="display5 heading-content text-center">About Well-Being Adda</h1> -->
+        <p class="content"> <span class="bold">Help us in making well-being a priority by actively taking part in
+                conducting sessions and advocating for the same. </span>
+            <br>
+            <a href="mailto: thewellbeingadda@gmail.com" class="text-info">Volunteer</a>, or <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeFvbZ-rVTRL26oMiSCnJcgUO4IwngdM4MLqIv8ulRuteP6eg/viewform?usp=sf_link"
+                target="_blank" class="text-info">intern</a> with us to directly interact with our target audience and
+            improve your
+            skills. Join us
+            in our efforts to make a difference in this world and make it a better place.
+        </p>
+        <p class="content">
+            Want to share experiences, suggestions or feedback? Reach out to us by filling this short <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeUQHT3CvtrsWbZnZmhHe9bYPjC2SUVDPKleSdwmPLKrZEKZg/viewform?usp=sf_link"
+                class="text-info" target="_blank">form</a>!
+        </p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex justify-content-center" id="textbg1">
+        <img src="{% static 'chat_feature/images/White_with_Flower_Icon_Floral_Logo.png' %}" alt="textbg1"
+            class="img-responsive" width="100%">
+        <!-- <iframe src="https://drive.google.com/file/d/1A3SRetN6lD-uYjdWzDpRVBKrdYOU37hn/preview" width="640"
+            height="360" allowfullscreen class="my-4"></iframe> -->
+    </div>
+</div>
+
+<!-- <div class="d-flex mx-0 justify-content-center section dark mx-5 p-5">
+    <div class="links d-flex justify-content-center">
+        <a class="link" target="_blank" href="https://www.instagram.com/wellbeingadda/"><i
+                class="fab fa-instagram fa-3x ig"></i></a>
+        <a class="link" target="_blank" href="https://www.facebook.com/wellbeingadda"><i
+                class="fab fa-facebook fa-3x fb"></i></a>
+        <a class="link" target="_blank" href="mailto: thewellbeingadda@gmail.com"><i
+                class="fas fa-envelope fa-3x email"></i></a>
+        <a class="link d-inline" target="_blank"
+            href="https://docs.google.com/forms/d/13eEFzGjHQMMyUsmPyCWRnI3kQr2dVGROzUttWHF2Bzc/viewform?edit_requested=true"><i
+                class="fas fa-align-justify fa-3x ml-1"></i></a>
+    </div>
+</div> -->
+
+{% endblock %}

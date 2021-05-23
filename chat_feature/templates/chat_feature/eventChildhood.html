@@ -1,0 +1,77 @@
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Childhood Unplugged | Well Being Adda</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'chat_feature/css/team.css' %}">
+<link rel="stylesheet" href="{% static 'chat_feature/css/events.css' %}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" />
+
+<!-- <div class="scrollIcon"><i class="fas fas fa-arrow-circle-down fa-2x d-none d-lg-block"></i></div> -->
+<div class="spacer"></div>
+
+<div class="slick_container">
+    <div class="container slideshow">
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/grateful1.jpg' %}" height="400px">
+            <!-- <div class="d-flex row mx-0 align-items-center center">
+                <div class="col-12 text-center">
+                    <div class="my-5 d-none d-md-inline">
+                        <h1 class="sub-heading">Enactus IIITD</h1>
+                        <h1 class="display-2 heading">Well-Being Adda</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 content-align-left">
+                    {% load static %}
+                    <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}"
+                        class="img-responsive landingLogo" width="100%">
+                </div>
+            </div> -->
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/grateful2.jpg' %}" height="400px">
+        </div>
+    </div>
+</div>
+
+<div class="header d-flex justify-content-center mx-0 mt-5 mx-md-5 p-md-5">
+    <h1 class="sub-heading">Childhood Unplugged</h1>
+</div>
+
+<div class="d-flex row mx-0 align-items-center section light mt-5 mx-md-5 p-md-5">
+    <div class="col-12 col-lg-8">
+        <!-- <h1 class="display5 heading-content text-center">About Well-Being Adda</h1> -->
+        <p class="content"> <span class="bold">One uploads a picture or a video for a childhood memory and nominate
+                their friends to do the same.</span>
+            <br>
+            We introduced an <span class="high">online story challenge</span> for our <span class="high">instagram
+                followers</span> on 11th January 2021 to bring a smile on their faces in the grim times of the pandemic.
+            The challenge was pretty simple, all they had to do was upload a <span class="high">picture or a video of
+                something that reminds them of their childhood</span> and nominate their friends to do the same. Most of
+            the stories were of the <span class="high">famous 90’s kids shows</span> that all of us grew up watching
+            while some of them had the followers <span class="high">sharing their cute childhood photographs</span>.
+            Well-Being Adda <span class="high">reshared all of the stories</span> on their page to ensure that <span
+                class="high">happiness reaches everyone</span> following them. There were more than 20 stories posted
+            for the challenge.
+        </p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex justify-content-center" id="textbg1">
+        <img src="{% static 'chat_feature/images/childhoodunplugged.jpg' %}" alt="textbg1" class="img-responsive"
+            width="80%" style="border-radius: 20px;">
+        <!-- <iframe src="https://drive.google.com/file/d/1A3SRetN6lD-uYjdWzDpRVBKrdYOU37hn/preview" width="640"
+            height="360" allowfullscreen class="my-4"></iframe> -->
+    </div>
+</div>
+
+<script src="{% static 'chat_feature/js/eventCarousel.js' %}"></script>
+{% endblock %}

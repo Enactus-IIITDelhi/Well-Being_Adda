@@ -1,0 +1,128 @@
+{% extends 'chat_feature/base.html' %}
+{% load static %}
+
+{% block head %}
+<title>SELF HUB Program | Well Being Adda</title>
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{% static 'chat_feature/css/team.css' %}">
+<link rel="stylesheet" href="{% static 'chat_feature/css/events.css' %}">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" />
+
+<!-- <div class="scrollIcon"><i class="fas fas fa-arrow-circle-down fa-2x d-none d-lg-block"></i></div> -->
+<div class="spacer"></div>
+
+<div class="slick_container">
+    <div class="container slideshow">
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle1a.jpeg' %}" height="400px">
+            <!-- <div class="d-flex row mx-0 align-items-center center">
+                <div class="col-12 text-center">
+                    <div class="my-5 d-none d-md-inline">
+                        <h1 class="sub-heading">Enactus IIITD</h1>
+                        <h1 class="display-2 heading">Well-Being Adda</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 content-align-left">
+                    {% load static %}
+                    <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}"
+                        class="img-responsive landingLogo" width="100%">
+                </div>
+            </div> -->
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle1b.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle2a.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle2b.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle2c.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle3a.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle3b.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle3c.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle4a.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle4b.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle4c.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle5a.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle5b.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle5c.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle5d.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle6a.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle6b.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle6c.jpeg' %}" height="400px">
+        </div>
+        <div class="slideItem">
+            <img src="{% static 'chat_feature/images/wellbeingcircle6d.jpeg' %}" height="400px">
+        </div>
+    </div>
+</div>
+
+<div class="header d-flex justify-content-center mx-0 mt-5 mx-md-5 p-md-5">
+    <h1 class="sub-heading">Well-Being Circle Sessions - SELF HUB Program</h1>
+</div>
+
+<div class="d-flex row mx-0 align-items-center section light mt-5 mx-md-5 p-md-5">
+    <div class="col-12 col-lg-8">
+        <!-- <h1 class="display5 heading-content text-center">About Well-Being Adda</h1> -->
+        <p class="content"> <span class="bold">The Well-being Circle Sessions aimed to create a community and promote
+                open conversations about emotional health and well-being.</span>
+            <br>
+            Weekly sessions were held over a period of <span class="high">7 weeks</span> in March - April 2021 for
+            students in <span class="high">classes 7th to 10th</span>, to <span class="high">encourage
+                conversation</span> around common and relatable well-being topics such as <span class="high">peer
+                pressure, bullying, procrastination, stress management, gratitude, perfectionism, and more</span>. The
+            sessions included <span class="high">video screenings</span> and <span class="high">interactive
+                activities</span> that urged the students to introspect. The sessions resulted in enlightening
+            discussions with <span class="high">interesting and creative inputs</span> from the students and sharing of
+            personal anecdotes.
+
+        </p>
+    </div>
+    <div class="col-12 col-lg-4 d-flex justify-content-center" id="textbg1">
+        <img src="{% static 'chat_feature/images/White_with_flower_Icon_Cropped.png' %}" alt="textbg1"
+            class="img-responsive" width="80%">
+        <!-- <iframe src="https://drive.google.com/file/d/1A3SRetN6lD-uYjdWzDpRVBKrdYOU37hn/preview" width="640"
+            height="360" allowfullscreen class="my-4"></iframe> -->
+    </div>
+</div>
+
+<script src="{% static 'chat_feature/js/eventCarousel.js' %}"></script>
+{% endblock %}
